@@ -13,9 +13,8 @@ const firebaseConfig = {
   appId: "1:399869583740:web:d3cd7a616172e241d344f9",
   measurementId: "G-18CJDTFMQL"
 };
-  // Initialize Firebase
-  var defaultProject = firebase.initializeApp(firebaseConfig);
-  var firestore = defaultProject.firestore();
+  var project = firebase.initializeApp(firebaseConfig);
+  var firestore = project.firestore();
   
   const docRef = firestore.doc('orders/coffeeorders');
 
